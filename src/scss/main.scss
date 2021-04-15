@@ -1,3 +1,7 @@
-body {
-  background: pink;
-}
+@import "./variables";
+@import "./global";
+@import "./media_queries";
+@import "./header";
+@import "./section_one_features";
+@import "./section_two_touch";
+@import "./footer";
