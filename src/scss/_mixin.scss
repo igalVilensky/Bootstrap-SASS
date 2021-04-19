@@ -1,0 +1,20 @@
+$font-sizing: (
+  xs: 12px,
+  s: 14px,
+  m: 16px,
+  l: 20px,
+  xl: 40px,
+  xxl: 60px,
+);
+
+@mixin font {
+  font-family: "PT Sans", sans-serif;
+}
+
+@mixin font-size($size) {
+  @if map-has-key($font-sizing, $size) {
+    font-size: map-get($font-sizing, $size);
+  } @else {
+    @error "#{$size} this is not defined, Use #{font-sizing}";
+  }
+}
