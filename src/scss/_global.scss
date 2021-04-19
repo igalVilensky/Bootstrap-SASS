@@ -1,5 +1,6 @@
 body {
   @include font-size(m);
+  @include font;
 }
 
 ul,
